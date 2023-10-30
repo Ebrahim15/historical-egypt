@@ -1,0 +1,38 @@
+.img_container{
+    transition: translate 500ms ease-in-out;
+}
+
+/* .img_container img{
+    transition: translate 500ms ease-in-out;
+} */
+
+.slider_buttons {
+    height: fit-content;
+    z-index: 100;
+}
+
+.slider_buttons svg {
+    transition: fill-opacity 300ms, scale 300ms;
+}
+
+.slider_buttons svg:hover {
+    fill-opacity: 0.5;
+    /* scale: 1.1 1.1; */
+}
+
+.slider_buttons_container {
+    transition: opacity 300ms;
+}
+
+.slider_index_buttons_container {
+    transition: opacity 300ms;
+}
+
+.img_slider_container:hover .slider_buttons_container{
+    opacity: 1;
+}
+
+.img_slider_container:hover .slider_index_buttons_container{
+    opacity: 1;
+}
+
