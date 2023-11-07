@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import './ImageSlider.css'
 import Image from 'next/image'
-import { ArrowBigLeft, ArrowBigRight, ChevronLeftCircle, ChevronRightCircle, Circle, CircleDot } from 'lucide-react'
+import { ChevronLeftCircle, ChevronRightCircle, Circle, CircleDot } from 'lucide-react'
 
 const ImageSlider = ({images}) => {
   const [imgIndex, setImgIndex] = useState(0)
@@ -32,7 +32,7 @@ const ImageSlider = ({images}) => {
   }, [])
 
   return (
-    <div className="img_slider_container flex overflow-hidden w-[30%] h-[300px] relative">
+    <div className="img_slider_container flex overflow-hidden w-full h-[300px] relative lg:w-[30%]">
       {/* <p className="absolute text-black z-100 m-10">{slideText}</p> */}
       {images.map((image, index) => (
         <div

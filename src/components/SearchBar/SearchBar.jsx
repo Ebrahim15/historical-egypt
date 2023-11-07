@@ -5,7 +5,7 @@ import { FaSearch } from "react-icons/fa";
 import "./SearchBar.css";
 import { useRouter } from "next/navigation";
 
-const SearchBar = () => {
+const SearchBar = ({setToggleNavMenu}) => {
   const router = useRouter();
   const [input, setInput] = useState("");
   const [results, setResults] = useState([]);
@@ -75,6 +75,9 @@ const SearchBar = () => {
     router.push(`/explore#${result.link}`);
     setResults([]);
     setInput("");
+    
+    setToggleNavMenu(false)
+    
     setSearchBarToggle(false);
   };
 

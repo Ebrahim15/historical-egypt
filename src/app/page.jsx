@@ -76,21 +76,24 @@ export default function Home() {
   return (
     <main className="h-screen">
       <div className="h-screen relative">
-        <Image
-          src="/assets/images/pyramidsL2.jpg"
-          alt="pyramids"
-          fill={true}
-          objectFit="cover"
-          className="z-0"
-        />
-        <div className="flex overflow-hidden flex-row justify-center w-2/4 items-center h-full absolute">
+        <div className="background_image_container">
+          <Image
+            src="/assets/images/pyramidsL2.jpg"
+            alt="pyramids"
+            fill={true}
+            objectFit="cover"
+            objectPosition="60% center"
+            className="z-0 background_image"
+          />
+        </div>
+        <div className="home_background flex overflow-hidden flex-row justify-center w-full px-5 items-center h-full absolute lg:w-2/4 lg:items-center">
           {welcomeToEgypt.map((language, id) => {
             return (
               <div
                 key={id}
-                className={`home_welcome_message ${
-                  language.lang === "Ar" ? "font-[Roboto] text-9xl" : ""
-                } flex flex-col p-3 font-bold text-center text-white drop-shadow-md text-8xl leading-tight absolute ${
+                className={`home_welcome_message  w-full h-1/3 lg:h-auto lg:w-auto ${
+                  language.lang === "Ar" ? "font-[Roboto] text-6xl lg:text-9xl" : ""
+                } flex flex-col p-3 justify-center font-bold text-center text-white drop-shadow-md text-5xl lg:text-8xl lg:bg-inherit leading-tight absolute ${
                   welcomeLang === language.lang ? "opacity-100" : "opacity-0"
                 }`}
               >

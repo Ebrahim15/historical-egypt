@@ -12,7 +12,7 @@ const AboutUs = () => {
         objectFit="cover"
         className="z-0 f_image"
       />
-      <div className="absolute aboutus_container p-5 m-5">
+      <div className="absolute max-h-full top-16 bottom-0 overflow-auto aboutus_container p-5 m-5 md:top-auto md:bottom-auto md:max-h-auto">
         <p className="text-white drop-shadow">
           Welcome to our website, your ultimate guide to exploring the
           historical and natural wonders of Egypt! We are a team of passionate

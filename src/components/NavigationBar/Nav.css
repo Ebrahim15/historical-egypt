@@ -1,3 +1,13 @@
 .nav_bar {
     background-color: rgba(167, 155, 155, 0.449);
   }
+
+.nav_menu {
+  transition: height 500ms, opacity 1.5s;
+}
+
+@media only screen and (min-width: 1280px) {
+}
+
+.search_lang_container {
+}
